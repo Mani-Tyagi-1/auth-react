@@ -39,10 +39,10 @@ const Login = () => {
   };
 
   return (
-    <div>
-      <div className="Login">
+    <div className="Login min-h-screen  flex justify-center items-center ">
+      <div className=" w-[60%] flex items-center justify-center border-2 border-gray-600 p-5 rounded ">
         <form onSubmit={handleLogin}>
-          <h1>Login</h1>
+          <h1 className="text-3xl p-2 font-bold mb-2 text-center">Login</h1>
           <div>
             <input
               type="email"
@@ -50,6 +50,7 @@ const Login = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
+              className="border-2 border-gray-600 p-2 rounded none mb-2  w-[15rem] hover:scale-105"
             />
           </div>
           <div>
@@ -59,21 +60,29 @@ const Login = () => {
               qualue={password}
               onChange={(e) => setPassword(e.target.value)}
               required
+              className="border-2 border-gray-600 p-2 rounded none  w-[15rem]  hover:scale-105"
             />
           </div>
 
-          <button type="submit">Login</button>
+          <button
+            type="submit"
+            className="bg-blue-500 text-white p-1 w-[15rem]  mt-2 mb-2 rounded hover:scale-105"
+          >
+            Login
+          </button>
 
           <div>
             <p>
               Don't have an account?
-              <a href="/">Register</a>
+              <a href="/" className="text-blue-500 hover:underline">
+                Register
+              </a>
             </p>
           </div>
         </form>
 
         {error && <p>{error}</p>}
-        {!error &&role && <p>Logged in as : {role}</p>}
+        {!error && role && <p>Logged in as : {role}</p>}
       </div>
     </div>
   );
