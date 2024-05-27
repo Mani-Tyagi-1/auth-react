@@ -31,7 +31,7 @@ const Register = () => {
 
   return (
     <div className=" min-h-screen  flex justify-center items-center">
-      <div className="register w-[20%] flex items-center justify-center border-2 border-gray-600 p-5 rounded">
+      <div className="register w-[21rem] flex items-center justify-center border-2 border-gray-600 p-5 rounded">
         <form onSubmit={handleSignup}>
           <h1 className="text-3xl p-2 font-bold mb-2 text-center">
             Registration
