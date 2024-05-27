@@ -7,11 +7,11 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <div >
+    <div className="bg-hero bg-no-repeat min-h-screen bg-cover bg-center bg-fixed ">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Register/>}/>
-          <Route path='/login' element={<Login/>}/>
+          <Route path="/" element={<Register />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
     </div>
